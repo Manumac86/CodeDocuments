@@ -1,3 +1,11 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+documents_get: 
+  path: /documents
+  controller: App\Controller\LibraryController::list
+
+document_create: 
+  path: /document/create
+  controller: App\Controller\LibraryController::createDocument
